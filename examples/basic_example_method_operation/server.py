@@ -15,7 +15,7 @@ async def main():
     # setup our server
     server = Server()
     await server.init()
-    server.set_endpoint('opc.tcp://192.168.200.181:4840/') # Setting the IP and port
+    server.set_endpoint('opc.tcp://XXX.XXX.XXX.XXX:4840/') # Setting the IP and port
     await server.import_xml("AASmodel.xml") # Importing the OPCUA ML model generated on the AASX tool.
     # Creating the variables based on the nodes defined in the OPCUA ML model.
     testProperty1=server.get_node("ns=3;i=119")
