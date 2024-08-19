@@ -9,7 +9,6 @@ from asyncua import uamethod, Server
 def methodScript(parent, x):
     return 5*x 
 
-import datetime # Library to generate a date
 async def main():
     _logger = logging.getLogger('asyncua')
     # setup our server
