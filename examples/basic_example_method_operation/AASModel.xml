@@ -1,0 +1,1761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2024-08-19T08:13:38.0644856Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://opcfoundation.org/UA/i4aas/</Uri>
+    <Uri>http://admin-shell.io/samples/i4aas/instance/</Uri>
+  </NamespaceUris>
+  <UAVariable NodeId="ns=1;i=1" BrowseName="Version" ParentNodeId="ns=1;i=1001" DataType="i=12" AccessLevel="3">
+    <DisplayName>Version</DisplayName>
+    <Description Locale="en">Version</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=2" BrowseName="Revision" ParentNodeId="ns=1;i=1001" DataType="i=12" AccessLevel="3">
+    <DisplayName>Revision</DisplayName>
+    <Description Locale="en">Revision</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=3" BrowseName="Category" ParentNodeId="ns=1;i=2001" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=2001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=4" BrowseName="Identification" ParentNodeId="ns=1;i=2000">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="ns=1;i=5" BrowseName="AASIrdiConceptDescriptionType">
+    <DisplayName>AASIrdiConceptDescriptionType</DisplayName>
+    <Description Locale="en">The semantics of a property or other elements that may have a semantic description is defined by a concept description. The description of the concept should follow a standardized schema (realized as data specification template).</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=57</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=58</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=59</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=60</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=61</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=56</Reference>
+      <Reference ReferenceType="i=17604">ns=1;i=61</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=17598</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=56" BrowseName="Category" ParentNodeId="ns=1;i=5" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=5</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=57" BrowseName="Identification" ParentNodeId="ns=1;i=5">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=5</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=58" BrowseName="Administration" ParentNodeId="ns=1;i=5">
+    <DisplayName>Administration</DisplayName>
+    <Description Locale="en">Administration</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=5</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=59" BrowseName="IsCaseOf" ParentNodeId="ns=1;i=5">
+    <DisplayName>IsCaseOf</DisplayName>
+    <Description Locale="en">IsCaseOf</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=5</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=60" BrowseName="DataSpecification" ParentNodeId="ns=1;i=5">
+    <DisplayName>DataSpecification</DisplayName>
+    <Description Locale="en">DataSpecification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=5</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=61" BrowseName="DataSpecificationIEC61360" ParentNodeId="ns=1;i=5">
+    <DisplayName>DataSpecificationIEC61360</DisplayName>
+    <Description Locale="en">DataSpecificationIEC61360</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11510</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=5</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="ns=1;i=6" BrowseName="AASUriConceptDescriptionType">
+    <DisplayName>AASUriConceptDescriptionType</DisplayName>
+    <Description Locale="en">The semantics of a property or other elements that may have a semantic description is defined by a concept description. The description of the concept should follow a standardized schema (realized as data specification template).</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=63</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=64</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=65</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=66</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=67</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=62</Reference>
+      <Reference ReferenceType="i=17604">ns=1;i=67</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=17600</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=62" BrowseName="Category" ParentNodeId="ns=1;i=6" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=6</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=63" BrowseName="Identification" ParentNodeId="ns=1;i=6">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=6</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=64" BrowseName="Administration" ParentNodeId="ns=1;i=6">
+    <DisplayName>Administration</DisplayName>
+    <Description Locale="en">Administration</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=6</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=65" BrowseName="IsCaseOf" ParentNodeId="ns=1;i=6">
+    <DisplayName>IsCaseOf</DisplayName>
+    <Description Locale="en">IsCaseOf</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=6</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=66" BrowseName="DataSpecification" ParentNodeId="ns=1;i=6">
+    <DisplayName>DataSpecification</DisplayName>
+    <Description Locale="en">DataSpecification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=6</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=67" BrowseName="DataSpecificationIEC61360" ParentNodeId="ns=1;i=6">
+    <DisplayName>DataSpecificationIEC61360</DisplayName>
+    <Description Locale="en">DataSpecificationIEC61360</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11510</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=6</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="ns=1;i=7" BrowseName="AASCustomConceptDescriptionType">
+    <DisplayName>AASCustomConceptDescriptionType</DisplayName>
+    <Description Locale="en">The semantics of a property or other elements that may have a semantic description is defined by a concept description. The description of the concept should follow a standardized schema (realized as data specification template).</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=69</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=70</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=71</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=72</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=73</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=68</Reference>
+      <Reference ReferenceType="i=17604">ns=1;i=73</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=17589</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=68" BrowseName="Category" ParentNodeId="ns=1;i=7" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=7</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=69" BrowseName="Identification" ParentNodeId="ns=1;i=7">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=7</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=70" BrowseName="Administration" ParentNodeId="ns=1;i=7">
+    <DisplayName>Administration</DisplayName>
+    <Description Locale="en">Administration</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=7</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=71" BrowseName="IsCaseOf" ParentNodeId="ns=1;i=7">
+    <DisplayName>IsCaseOf</DisplayName>
+    <Description Locale="en">IsCaseOf</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=7</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=72" BrowseName="DataSpecification" ParentNodeId="ns=1;i=7">
+    <DisplayName>DataSpecification</DisplayName>
+    <Description Locale="en">DataSpecification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=7</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=73" BrowseName="DataSpecificationIEC61360" ParentNodeId="ns=1;i=7">
+    <DisplayName>DataSpecificationIEC61360</DisplayName>
+    <Description Locale="en">DataSpecificationIEC61360</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11510</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=7</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=14" BrowseName="PreferredName" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
+    <DisplayName>PreferredName</DisplayName>
+    <Description Locale="en">PreferredName</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=15" BrowseName="ShortName" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+    <DisplayName>ShortName</DisplayName>
+    <Description Locale="en">ShortName</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=16" BrowseName="Unit" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+    <DisplayName>Unit</DisplayName>
+    <Description Locale="en">Unit</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=17" BrowseName="UnitId" ParentNodeId="ns=1;i=3001">
+    <DisplayName>UnitId</DisplayName>
+    <Description Locale="en">UnitId</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=18" BrowseName="SourceOfDefinition" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
+    <DisplayName>SourceOfDefinition</DisplayName>
+    <Description Locale="en">SourceOfDefinition</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=19" BrowseName="Symbol" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+    <DisplayName>Symbol</DisplayName>
+    <Description Locale="en">Symbol</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=20" BrowseName="DataType" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+    <DisplayName>DataType</DisplayName>
+    <Description Locale="en">DataType</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=21" BrowseName="Definition" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
+    <DisplayName>Definition</DisplayName>
+    <Description Locale="en">Definition</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=22" BrowseName="ValueFormat" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+    <DisplayName>ValueFormat</DisplayName>
+    <Description Locale="en">ValueFormat</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=23" BrowseName="SemanticId" ParentNodeId="ns=1;i=1002">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1002</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=24" BrowseName="Type" ParentNodeId="ns=1;i=1002" DataType="i=12" AccessLevel="3">
+    <DisplayName>Type</DisplayName>
+    <Description Locale="en">Type</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1002</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=25" BrowseName="Value" ParentNodeId="ns=1;i=1002" DataType="i=12" AccessLevel="3">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1002</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=26" BrowseName="ValueId" ParentNodeId="ns=1;i=1002">
+    <DisplayName>ValueId</DisplayName>
+    <Description Locale="en">ValueId</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1002</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=27" BrowseName="Category" ParentNodeId="ns=1;i=1008" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1008</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=28" BrowseName="SemanticId" ParentNodeId="ns=1;i=1008">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1008</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=29" BrowseName="Kind" ParentNodeId="ns=1;i=1008" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1008</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=30" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1008">
+    <DisplayName>DataSpecification</DisplayName>
+    <Description Locale="en">DataSpecification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1008</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=31" BrowseName="Qualifier" ParentNodeId="ns=1;i=1008">
+    <DisplayName>Qualifier</DisplayName>
+    <Description Locale="en">Qualifier</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1008</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1002</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=32" BrowseName="Category" ParentNodeId="ns=1;i=1007" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=33" BrowseName="Identification" ParentNodeId="ns=1;i=1007">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=34" BrowseName="Administration" ParentNodeId="ns=1;i=1007">
+    <DisplayName>Administration</DisplayName>
+    <Description Locale="en">Administration</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=35" BrowseName="SemanticId" ParentNodeId="ns=1;i=1007">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=36" BrowseName="Kind" ParentNodeId="ns=1;i=1007" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=37" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1007">
+    <DisplayName>DataSpecification</DisplayName>
+    <Description Locale="en">DataSpecification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=38" BrowseName="Qualifier" ParentNodeId="ns=1;i=1007">
+    <DisplayName>Qualifier</DisplayName>
+    <Description Locale="en">Qualifier</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1002</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=39" BrowseName="SubmodelElement" ParentNodeId="ns=1;i=1007">
+    <DisplayName>SubmodelElement</DisplayName>
+    <Description Locale="en">SubmodelElement</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1007</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1008</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=40" BrowseName="ValueType" ParentNodeId="ns=1;i=1009" DataType="i=12" AccessLevel="3">
+    <DisplayName>ValueType</DisplayName>
+    <Description Locale="en">ValueType</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1009</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=41" BrowseName="Value" ParentNodeId="ns=1;i=1009" AccessLevel="3">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1009</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=42" BrowseName="AllowDuplicates" ParentNodeId="ns=1;i=1010" DataType="i=1" AccessLevel="3">
+    <DisplayName>AllowDuplicates</DisplayName>
+    <Description Locale="en">AllowDuplicates</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1010</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">false</Boolean>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=43" BrowseName="MimeType" ParentNodeId="ns=1;i=1013" DataType="i=12" AccessLevel="3">
+    <DisplayName>MimeType</DisplayName>
+    <Description Locale="en">MimeType</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1013</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=44" BrowseName="Value" ParentNodeId="ns=1;i=1013" DataType="i=12" AccessLevel="3">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1013</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=45" BrowseName="File" ParentNodeId="ns=1;i=1013">
+    <DisplayName>File</DisplayName>
+    <Description Locale="en">File</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1013</Reference>
+      <Reference ReferenceType="i=40">i=11575</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=46" BrowseName="MimeType" ParentNodeId="ns=1;i=1015" DataType="i=12" AccessLevel="3">
+    <DisplayName>MimeType</DisplayName>
+    <Description Locale="en">MimeType</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1015</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=47" BrowseName="Value" ParentNodeId="ns=1;i=1015" DataType="i=12" AccessLevel="3">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1015</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=48" BrowseName="Value" ParentNodeId="ns=1;i=1016">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1016</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=49" BrowseName="First" ParentNodeId="ns=1;i=1017">
+    <DisplayName>First</DisplayName>
+    <Description Locale="en">First</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1017</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=50" BrowseName="Second" ParentNodeId="ns=1;i=1017">
+    <DisplayName>Second</DisplayName>
+    <Description Locale="en">Second</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1017</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAMethod NodeId="ns=1;i=51" BrowseName="Operation" ParentNodeId="ns=1;i=1019" MethodDeclarationId="">
+    <DisplayName>Operation</DisplayName>
+    <Description Locale="en">Operation</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1019</Reference>
+    </References>
+  </UAMethod>
+  <UAObject NodeId="ns=1;i=52" BrowseName="in" ParentNodeId="ns=1;i=1019">
+    <DisplayName>in</DisplayName>
+    <Description Locale="en">in</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1019</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1018</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=53" BrowseName="out" ParentNodeId="ns=1;i=1019">
+    <DisplayName>out</DisplayName>
+    <Description Locale="en">out</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1019</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1018</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=54" BrowseName="Category" ParentNodeId="ns=1;i=1020" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1020</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=55" BrowseName="DictionaryEntry" ParentNodeId="ns=1;i=1020">
+    <DisplayName>DictionaryEntry</DisplayName>
+    <Description Locale="en">DictionaryEntry</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1020</Reference>
+      <Reference ReferenceType="i=40">i=17589</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=74" BrowseName="Category" ParentNodeId="ns=1;i=1022" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1022</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=75" BrowseName="SemanticId" ParentNodeId="ns=1;i=1022">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1022</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=76" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1022">
+    <DisplayName>DataSpecification</DisplayName>
+    <Description Locale="en">DataSpecification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1022</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=77" BrowseName="ContainedElement" ParentNodeId="ns=1;i=1022">
+    <DisplayName>ContainedElement</DisplayName>
+    <Description Locale="en">ContainedElement</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1022</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=78" BrowseName="Category" ParentNodeId="ns=1;i=1023" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1023</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=79" BrowseName="Identification" ParentNodeId="ns=1;i=1023">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1023</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=80" BrowseName="Administration" ParentNodeId="ns=1;i=1023">
+    <DisplayName>Administration</DisplayName>
+    <Description Locale="en">Administration</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1023</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=81" BrowseName="Kind" ParentNodeId="ns=1;i=1023" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1023</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=82" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1023">
+    <DisplayName>DataSpecification</DisplayName>
+    <Description Locale="en">DataSpecification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1023</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=83" BrowseName="AssetIdentificationModel" ParentNodeId="ns=1;i=1023">
+    <DisplayName>AssetIdentificationModel</DisplayName>
+    <Description Locale="en">AssetIdentificationModel</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1023</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=84" BrowseName="Category" ParentNodeId="ns=1;i=1024" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=85" BrowseName="Identification" ParentNodeId="ns=1;i=1024">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=86" BrowseName="Administration" ParentNodeId="ns=1;i=1024">
+    <DisplayName>Administration</DisplayName>
+    <Description Locale="en">Administration</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=87" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1024">
+    <DisplayName>DataSpecification</DisplayName>
+    <Description Locale="en">DataSpecification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=88" BrowseName="DerivedFrom" ParentNodeId="ns=1;i=1024">
+    <DisplayName>DerivedFrom</DisplayName>
+    <Description Locale="en">DerivedFrom</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=89" BrowseName="Asset" ParentNodeId="ns=1;i=1024">
+    <DisplayName>Asset</DisplayName>
+    <Description Locale="en">Asset</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1023</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=90" BrowseName="View" ParentNodeId="ns=1;i=1024">
+    <DisplayName>View</DisplayName>
+    <Description Locale="en">View</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1022</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=91" BrowseName="Submodel" ParentNodeId="ns=1;i=1024">
+    <DisplayName>Submodel</DisplayName>
+    <Description Locale="en">Submodel</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1007</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=92" BrowseName="ConceptDictionary" ParentNodeId="ns=1;i=1024">
+    <DisplayName>ConceptDictionary</DisplayName>
+    <Description Locale="en">ConceptDictionary</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=11508</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1024</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1020</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="ns=1;i=1000" BrowseName="AASIdentifierType">
+    <DisplayName>AASIdentifierType</DisplayName>
+    <Description Locale="en">Used to uniquely identify an entity by using an identifier.</Description>
+    <References>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1001" BrowseName="AASAdministrativeInformationType">
+    <DisplayName>AASAdministrativeInformationType</DisplayName>
+    <Description Locale="en">Administrative metainformation for an element like version information.</Description>
+    <References>
+      <Reference ReferenceType="i=46">ns=1;i=1</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=2</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1002" BrowseName="AASQualifierType">
+    <DisplayName>AASQualifierType</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=23</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=26</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=24</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=25</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1005" BrowseName="AASReferenceType">
+    <DisplayName>AASReferenceType</DisplayName>
+    <Description Locale="en">AASReferenceType</Description>
+    <References>
+      <Reference ReferenceType="i=46">ns=1;i=6</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1007" BrowseName="AASSubmodelType">
+    <DisplayName>AASSubmodelType</DisplayName>
+    <Description Locale="en">A Submodel defines a specific aspect of the asset represented by the AAS. A submodel is used to structure the digital representation and technical functionality of an Administration Shell into distinguishable parts. Each submodel refers to a well-defined domain or subject matter. Submodels can become standardized and thus become submodels types. Submodels can have different life-cycles. </Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=33</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=34</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=35</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=37</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=38</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=39</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=32</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=36</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1008" BrowseName="AASSubmodelElementType">
+    <DisplayName>AASSubmodelElementType</DisplayName>
+    <Description Locale="en">A data element is a submodel element that is not further composed out of other submodel elements. A data element is a submodel element that has a value. The type of value differs for different subtypes of data elements.</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=28</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=30</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=31</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2001</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=27</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=29</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1009</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1010</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1013</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1015</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1016</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1017</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1018</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1019</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1009" BrowseName="AASPropertyType">
+    <DisplayName>AASPropertyType</DisplayName>
+    <Description Locale="en">A property is a data element that has a single value.</Description>
+    <References>
+      <Reference ReferenceType="i=46">ns=1;i=40</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=41</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1010" BrowseName="AASSubmodelElementCollectionType">
+    <DisplayName>AASSubmodelElementCollectionType</DisplayName>
+    <Description Locale="en">A submodel element collection is a set or list of submodel elements.</Description>
+    <References>
+      <Reference ReferenceType="i=46">ns=1;i=42</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=1011</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1011" BrowseName="AASSubmodelElementOrderedCollectionType">
+    <DisplayName>AASSubmodelElementOrderedCollectionType</DisplayName>
+    <Description Locale="en">A submodel element collection is a set or list of submodel elements.</Description>
+    <References>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1010</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1013" BrowseName="AASFileType">
+    <DisplayName>AASFileType</DisplayName>
+    <Description Locale="en">A File is a data element that represents an address to a file. The value is an URI that can represent an absolute or relative path.</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=45</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=43</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=44</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1015" BrowseName="AASBlobType">
+    <DisplayName>AASBlobType</DisplayName>
+    <Description Locale="en">A BLOB is a data element that represents a file that is contained with its source code in the value attribute.</Description>
+    <References>
+      <Reference ReferenceType="i=46">ns=1;i=46</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=47</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1016" BrowseName="AASReferenceElementType">
+    <DisplayName>AASReferenceElementType</DisplayName>
+    <Description Locale="en">A reference element is a data element that defines a logical reference to another element within the same or another AAS or a reference to an external object or entity.</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=48</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1017" BrowseName="AASRelationshipElementType">
+    <DisplayName>AASRelationshipElementType</DisplayName>
+    <Description Locale="en">A relationship element is used to define a relationship between two referable elements.</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=49</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=50</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1018" BrowseName="OperationVariableType">
+    <DisplayName>OperationVariableType</DisplayName>
+    <Description Locale="en">An operation variable is a submodel element that is used as input or output variable of an operation.</Description>
+    <References>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1019" BrowseName="AASOperationType">
+    <DisplayName>AASOperationType</DisplayName>
+    <Description Locale="en">An operation is a submodel element with input and output variables.</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=52</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=53</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=51</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1020" BrowseName="AASConceptDictionaryType">
+    <DisplayName>AASConceptDictionaryType</DisplayName>
+    <Description Locale="en">A dictionary contains elements that can be reused. The concept dictionary contains concept descriptions. Typically a concept description dictionary of an AAS contains only concept descriptions of elements used within submodels of the AAS</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=55</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2001</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=54</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1022" BrowseName="AASViewType">
+    <DisplayName>AASViewType</DisplayName>
+    <Description Locale="en">A view is a collection of referable elements w.r.t. to a specific viewpoint of one or more stakeholders.</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=75</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=76</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=77</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2001</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=74</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1023" BrowseName="AASAssetType">
+    <DisplayName>AASAssetType</DisplayName>
+    <Description Locale="en">An Asset describes meta data of an asset that is represented by an AAS. The asset may either represent an asset type or an asset instance. The asset has a globally unique identifier plus – if needed – additional domain specific(proprietary) identifiers. </Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=79</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=80</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=82</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=83</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=78</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=81</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1024" BrowseName="AASAssetAdministrationShellType">
+    <DisplayName>AASAssetAdministrationShellType</DisplayName>
+    <Description Locale="en">An AssetAdministration Shell.</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=85</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=86</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=87</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=88</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=89</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=90</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=91</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=92</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=84</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=2000" BrowseName="IAASIdentifiableType">
+    <DisplayName>IAASIdentifiableType</DisplayName>
+    <Description Locale="en">An element that has a globally unique identifier. </Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=1;i=4</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=5</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=2001</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=2001" BrowseName="IAASReferableType">
+    <DisplayName>IAASReferableType</DisplayName>
+    <Description Locale="en">An element that is referable but has no globally unique. The id of the element is unique within the name space of the element.</Description>
+    <References>
+      <Reference ReferenceType="i=46">ns=1;i=3</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=17602</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=2000</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=3000" BrowseName="AASDataSpecificationType">
+    <DisplayName>AASDataSpecificationType</DisplayName>
+    <Description Locale="en">A data specification template defines the additional attributes an element may or shall have.</Description>
+    <References>
+      <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="i=45">ns=1;i=3001</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=3001" BrowseName="AASDataSpecificationIEC61360Type">
+    <DisplayName>AASDataSpecificationIEC61360Type</DisplayName>
+    <Description Locale="en">Data Specification Template conformant to IEC61360.</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=8</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=11</Reference>
+      <Reference ReferenceType="i=47">ns=1;i=17</Reference>
+      <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=7</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=14</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=15</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=16</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=18</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=19</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=20</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=21</Reference>
+      <Reference ReferenceType="i=46">ns=1;i=22</Reference>
+      <Reference ReferenceType="i=45" IsForward="false">ns=1;i=3000</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=2;i=8" BrowseName="Identification" ParentNodeId="ns=1;i=3001">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=78</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=9</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=10</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=9" BrowseName="IdType" ParentNodeId="ns=2;i=8" DataType="i=12" AccessLevel="3">
+    <DisplayName>IdType</DisplayName>
+    <Description Locale="en">IdType</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=8</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">URI</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=10" BrowseName="Id" ParentNodeId="ns=2;i=8" DataType="i=12" AccessLevel="3">
+    <DisplayName>Id</DisplayName>
+    <Description Locale="en">Id</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=8</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=11" BrowseName="Administration" ParentNodeId="ns=1;i=3001">
+    <DisplayName>Administration</DisplayName>
+    <Description Locale="en">Administration</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=1;i=3001</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=12</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=13</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=12" BrowseName="Version" ParentNodeId="ns=2;i=11" DataType="i=12" AccessLevel="3">
+    <DisplayName>Version</DisplayName>
+    <Description Locale="en">Version</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=11</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=13" BrowseName="Revision" ParentNodeId="ns=2;i=11" DataType="i=12" AccessLevel="3">
+    <DisplayName>Revision</DisplayName>
+    <Description Locale="en">Revision</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=11</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</String>
+    </Value>
+  </UAVariable>
+  <UAReferenceType NodeId="ns=1;i=4000" BrowseName="AASReference">
+    <DisplayName>AASReference</DisplayName>
+    <References>
+      <Reference ReferenceType="i=45" IsForward="false">i=31</Reference>
+    </References>
+    <InverseName>AASReferencedBy</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=2;i=93" BrowseName="AASROOT" ParentNodeId="i=85">
+    <DisplayName>AASROOT</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=97</Reference>
+      <Reference ReferenceType="i=40">i=61</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">i=85</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=97" BrowseName="testAAS" ParentNodeId="ns=2;i=93">
+    <DisplayName>AssetAdministrationShell:testAAS</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=98</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=101</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=106</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=93</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1024</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=98" BrowseName="Identification" ParentNodeId="ns=2;i=97">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=97</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=99</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=100</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=99" BrowseName="IdType" ParentNodeId="ns=2;i=98" DataType="i=12" AccessLevel="3">
+    <DisplayName>IdType</DisplayName>
+    <Description Locale="en">IdType</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=98</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Custom</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=100" BrowseName="Id" ParentNodeId="ns=2;i=98" DataType="i=12" AccessLevel="3">
+    <DisplayName>Id</DisplayName>
+    <Description Locale="en">Id</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=98</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">AssetAdministrationShell---032AD971</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=101" BrowseName="Asset" ParentNodeId="ns=2;i=97">
+    <DisplayName>Asset</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=102</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=97</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=105</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1023</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=102" BrowseName="Identification" ParentNodeId="ns=2;i=101">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=101</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=103</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=104</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=103" BrowseName="IdType" ParentNodeId="ns=2;i=102" DataType="i=12" AccessLevel="3">
+    <DisplayName>IdType</DisplayName>
+    <Description Locale="en">IdType</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=102</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Custom</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=104" BrowseName="Id" ParentNodeId="ns=2;i=102" DataType="i=12" AccessLevel="3">
+    <DisplayName>Id</DisplayName>
+    <Description Locale="en">Id</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=102</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Asset---183A16CD</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=105" BrowseName="Kind" ParentNodeId="ns=2;i=101" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=101</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=106" BrowseName="operationalSubmodel" ParentNodeId="ns=2;i=97">
+    <DisplayName>Submodel:operationalSubmodel</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=107</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=110</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=113</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=120</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=127</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=97</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=112</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1007</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=107" BrowseName="Identification" ParentNodeId="ns=2;i=106">
+    <DisplayName>Identification</DisplayName>
+    <Description Locale="en">Identification</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=106</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=108</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=109</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=108" BrowseName="IdType" ParentNodeId="ns=2;i=107" DataType="i=12" AccessLevel="3">
+    <DisplayName>IdType</DisplayName>
+    <Description Locale="en">IdType</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=107</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">IRI</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=109" BrowseName="Id" ParentNodeId="ns=2;i=107" DataType="i=12" AccessLevel="3">
+    <DisplayName>Id</DisplayName>
+    <Description Locale="en">Id</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=107</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">https://example.com/ids/sm/2130_8091_8042_5639</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=110" BrowseName="SemanticId" ParentNodeId="ns=2;i=106">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=106</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=111</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=111" BrowseName="Keys" ParentNodeId="ns=2;i=110" DataType="i=12" AccessLevel="3">
+    <DisplayName>Keys</DisplayName>
+    <Description Locale="en">Keys</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=110</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=112" BrowseName="Kind" ParentNodeId="ns=2;i=106" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=106</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=113" BrowseName="testProperty1" ParentNodeId="ns=2;i=106">
+    <DisplayName>testProperty1</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=115</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=106</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=114</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=117</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=118</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=119</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1009</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=114" BrowseName="Category" ParentNodeId="ns=2;i=113" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=113</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">VARIABLE</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=115" BrowseName="SemanticId" ParentNodeId="ns=2;i=113">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=113</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=116</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=116" BrowseName="Keys" ParentNodeId="ns=2;i=115" DataType="i=12" AccessLevel="3">
+    <DisplayName>Keys</DisplayName>
+    <Description Locale="en">Keys</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=115</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=117" BrowseName="Kind" ParentNodeId="ns=2;i=113" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=113</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=118" BrowseName="ValueType" ParentNodeId="ns=2;i=113" DataType="i=12" AccessLevel="3">
+    <DisplayName>ValueType</DisplayName>
+    <Description Locale="en">ValueType</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=113</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">double</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=119" BrowseName="Value" ParentNodeId="ns=2;i=113" DataType="i=11" AccessLevel="3">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=113</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <Double xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Double>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=120" BrowseName="testProperty2" ParentNodeId="ns=2;i=106">
+    <DisplayName>testProperty2</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=122</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=106</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=121</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=124</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=125</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=126</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1009</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=121" BrowseName="Category" ParentNodeId="ns=2;i=120" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=120</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">VARIABLE</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=122" BrowseName="SemanticId" ParentNodeId="ns=2;i=120">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=120</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=123</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=123" BrowseName="Keys" ParentNodeId="ns=2;i=122" DataType="i=12" AccessLevel="3">
+    <DisplayName>Keys</DisplayName>
+    <Description Locale="en">Keys</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=122</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=124" BrowseName="Kind" ParentNodeId="ns=2;i=120" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=120</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=125" BrowseName="ValueType" ParentNodeId="ns=2;i=120" DataType="i=12" AccessLevel="3">
+    <DisplayName>ValueType</DisplayName>
+    <Description Locale="en">ValueType</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=120</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">integer</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=126" BrowseName="Value" ParentNodeId="ns=2;i=120" DataType="i=8" AccessLevel="3">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=120</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <Int64 xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Int64>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=127" BrowseName="testOperation" ParentNodeId="ns=2;i=106">
+    <DisplayName>testOperation</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=129</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=132</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=140</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=106</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=128</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=131</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=148</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1019</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=128" BrowseName="Category" ParentNodeId="ns=2;i=127" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=127</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">VARIABLE</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=129" BrowseName="SemanticId" ParentNodeId="ns=2;i=127">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=127</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=130</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=130" BrowseName="Keys" ParentNodeId="ns=2;i=129" DataType="i=12" AccessLevel="3">
+    <DisplayName>Keys</DisplayName>
+    <Description Locale="en">Keys</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=129</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=131" BrowseName="Kind" ParentNodeId="ns=2;i=127" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=127</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=132" BrowseName="OperationInputVariables" ParentNodeId="ns=2;i=127">
+    <DisplayName>OperationInputVariables</DisplayName>
+    <Description Locale="en">OperationInputVariables</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=133</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=127</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1019</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=133" BrowseName="inputValue" ParentNodeId="ns=2;i=132">
+    <DisplayName>inputValue</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=135</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=132</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=134</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=137</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=138</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=139</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1009</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=134" BrowseName="Category" ParentNodeId="ns=2;i=133" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=133</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">PARAMETER</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=135" BrowseName="SemanticId" ParentNodeId="ns=2;i=133">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=133</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=136</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=136" BrowseName="Keys" ParentNodeId="ns=2;i=135" DataType="i=12" AccessLevel="3">
+    <DisplayName>Keys</DisplayName>
+    <Description Locale="en">Keys</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=135</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=137" BrowseName="Kind" ParentNodeId="ns=2;i=133" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=133</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=138" BrowseName="ValueType" ParentNodeId="ns=2;i=133" DataType="i=12" AccessLevel="3">
+    <DisplayName>ValueType</DisplayName>
+    <Description Locale="en">ValueType</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=133</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">double</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=139" BrowseName="Value" ParentNodeId="ns=2;i=133" DataType="i=11" AccessLevel="3">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=133</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <Double xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Double>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=140" BrowseName="OperationOutputVariables" ParentNodeId="ns=2;i=127">
+    <DisplayName>OperationOutputVariables</DisplayName>
+    <Description Locale="en">OperationOutputVariables</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=141</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=127</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1019</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=141" BrowseName="outputValue" ParentNodeId="ns=2;i=140">
+    <DisplayName>outputValue</DisplayName>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=143</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=140</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=142</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=145</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=146</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=147</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1009</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=142" BrowseName="Category" ParentNodeId="ns=2;i=141" DataType="i=12" AccessLevel="3">
+    <DisplayName>Category</DisplayName>
+    <Description Locale="en">Category</Description>
+    <References>
+      <Reference ReferenceType="i=37">i=80</Reference>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=141</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">VARIABLE</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=143" BrowseName="SemanticId" ParentNodeId="ns=2;i=141">
+    <DisplayName>SemanticId</DisplayName>
+    <Description Locale="en">SemanticId</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=141</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=144</Reference>
+      <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;i=144" BrowseName="Keys" ParentNodeId="ns=2;i=143" DataType="i=12" AccessLevel="3">
+    <DisplayName>Keys</DisplayName>
+    <Description Locale="en">Keys</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=143</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=145" BrowseName="Kind" ParentNodeId="ns=2;i=141" DataType="i=12" AccessLevel="3">
+    <DisplayName>Kind</DisplayName>
+    <Description Locale="en">Kind</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=141</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=146" BrowseName="ValueType" ParentNodeId="ns=2;i=141" DataType="i=12" AccessLevel="3">
+    <DisplayName>ValueType</DisplayName>
+    <Description Locale="en">ValueType</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=141</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">double</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=147" BrowseName="Value" ParentNodeId="ns=2;i=141" DataType="i=11" AccessLevel="3">
+    <DisplayName>Value</DisplayName>
+    <Description Locale="en">Value</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=141</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <Double xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</Double>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=2;i=148" BrowseName="Operation" ParentNodeId="ns=2;i=127" MethodDeclarationId="">
+    <DisplayName>Operation</DisplayName>
+    <Description Locale="en">Operation</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=127</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=149</Reference>
+      <Reference ReferenceType="i=46">ns=2;i=150</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=2;i=149" BrowseName="InputArguments" ParentNodeId="ns=2;i=148" DataType="i=296" ValueRank="1" AccessLevel="3">
+    <DisplayName>InputArguments</DisplayName>
+    <Description Locale="en">InputArguments</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=148</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>inputValue</Name>
+              <DataType>
+                <Identifier>i=11</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+              <Description>
+                <Locale p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                <Text>
+                </Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=150" BrowseName="OutputArguments" ParentNodeId="ns=2;i=148" DataType="i=296" ValueRank="1" AccessLevel="3">
+    <DisplayName>OutputArguments</DisplayName>
+    <Description Locale="en">OutputArguments</Description>
+    <References>
+      <Reference ReferenceType="i=46" IsForward="false">ns=2;i=148</Reference>
+      <Reference ReferenceType="i=40">i=68</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>outputValue</Name>
+              <DataType>
+                <Identifier>i=11</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions p5:nil="true" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance" />
+              <Description>
+                <Locale p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+                <Text>
+                </Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;i=94" BrowseName="Dictionaries" ParentNodeId="i=2253">
+    <DisplayName>Dictionaries</DisplayName>
+    <Description Locale="en">Dictionaries</Description>
+    <References>
+      <Reference ReferenceType="i=47">ns=2;i=95</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=96</Reference>
+      <Reference ReferenceType="i=35" IsForward="false">i=2253</Reference>
+      <Reference ReferenceType="i=40">i=17591</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">i=2253</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=95" BrowseName="ConceptDescriptions" ParentNodeId="ns=2;i=94">
+    <DisplayName>ConceptDescriptions</DisplayName>
+    <Description Locale="en">ConceptDescriptions</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=94</Reference>
+      <Reference ReferenceType="i=40">i=17591</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=96" BrowseName="DictionaryEntries" ParentNodeId="ns=2;i=94">
+    <DisplayName>DictionaryEntries</DisplayName>
+    <Description Locale="en">DictionaryEntries</Description>
+    <References>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=94</Reference>
+      <Reference ReferenceType="i=40">i=17591</Reference>
+    </References>
+  </UAObject>
+</UANodeSet>
