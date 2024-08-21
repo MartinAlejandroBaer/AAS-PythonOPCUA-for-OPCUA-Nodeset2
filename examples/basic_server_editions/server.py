@@ -11,7 +11,7 @@ async def main():
     # setup our server
     server = Server()
     await server.init()
-    server.set_endpoint('opc.tcp://192.168.200.157:51210/UA/') # Setting the IP and port
+    server.set_endpoint('opc.tcp://XXX.XXX.XXX.XXX:4840/') # Setting the IP and port
     server.set_security_policy(
         [
             ua.SecurityPolicyType.NoSecurity,
@@ -22,16 +22,15 @@ async def main():
     await server.import_xml("OPC UA Nodeset2.xml") # Importing the OPCUA ML model generated on the AASX tool.
     #await server.import_xml("instance.xml")
     # Creating the variables based on the nodes defined in the OPCUA ML model.
-    Temperature=server.get_node("ns=3;i=1203") # Note: The variable Node is a string
+    StringVariable=server.get_node("ns=3;i=1203") # Note: The variable Node is a string
     # We have now to set up the varibales to editable if we want to overwrite its values.
-    await Temperature.set_writable()
+    await StringVariable.set_writable()
     async with server:
         while True: # Infinite loop to overwrite the variables Temperature and Volume
             await asyncio.sleep(5)
-            new_temp = await Temperature.get_value()
-            await Temperature.write_value("Test")
-            # print("New temperature: " + str(new_temp) + ", New Volume: " + str(new_vol))
-            print("New temperature: " + str(new_temp))
+            new_str = await StringVariable.get_value()
+            await StringVariable.write_value("Test")
+            print("New temperature: " + str(new_str))
           
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
