@@ -92,5 +92,5 @@ if __name__ == '__main__':
 ## Important notes
 - The required files to execute the above mentioned codes are contained within the folder "examples".
 - The variables exposed with two above presented codes are read-only. In order to be able to edit them from different clients check the "examples" folder. 
-- The deployed **Asset Administration Shells** correspond to **Version 2.0**.
+- The deployed **Asset Administration Shells** corresponds to **Version 2.0**.
 
