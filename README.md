@@ -51,7 +51,7 @@ from asyncua import uamethod, Server
 def methodScript(parent, x):
     return 5*x 
 
-# For multiple inputs and outputs defined as single properties
+# For multiple inputs and outputs defined as single Submodel Element Properties within the Submodel Element Operation
 # Where x and y are the inputs
 # Where (y+x) and (x+y) are the outputs
 
