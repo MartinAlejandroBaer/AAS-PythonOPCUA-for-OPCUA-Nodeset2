@@ -9,6 +9,14 @@ from asyncua import uamethod, Server
 def methodScript(parent, x):
     return 5*x 
 
+# For multiple inputs and outputs defined as single properties
+# Where x and y are the inputs
+# Where (y+x) and (x+y) are the outputs
+
+# @uamethod
+# def methodScript(parent, x,y):
+#     return y*x, x+y
+
 async def main():
     _logger = logging.getLogger('asyncua')
     # setup our server
