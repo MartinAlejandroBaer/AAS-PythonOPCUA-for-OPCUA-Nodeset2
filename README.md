@@ -1,5 +1,6 @@
 Example test of an OPC UA server provided to address the detected issue in the AASX Package Explorer tool [Link](https://github.com/eclipse-aaspe/aaspe/issues/187#issuecomment-2106367090) 
 
+## Examples
 The example requires the Asyncua library which can be easily installed via pip. [Link](https://pypi.org/project/asyncua/)
 
 ``` Python
@@ -88,8 +89,8 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     asyncio.run(main(), debug=True)
 ```
-* Important notes
+## Important notes
 - The required files to execute the above mentioned codes are contained within the folder "examples".
 - The variables exposed with two above presented codes are read-only. In order to be able to edit them from different clients check the "examples" folder. 
-- The deployed Asset Administration Shells correspond to version 2.0.
+- The deployed **Asset Administration Shells** correspond to **Version 2.0**.
 
