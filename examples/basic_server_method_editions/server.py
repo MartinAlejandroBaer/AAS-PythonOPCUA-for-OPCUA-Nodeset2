@@ -23,11 +23,19 @@ async def main():
     server = Server()
     await server.init()
     server.set_endpoint('opc.tcp://XXX.XXX.XXX.XXX:4840/') # Setting the IP and port
+    server.set_security_policy( # We add the security policies in order to be able to edit nodes
+        [
+            ua.SecurityPolicyType.NoSecurity,
+#            ua.SecurityPolicyType.Basic256Sha256_SignAndEncrypt,
+#            ua.SecurityPolicyType.Basic256Sha256_Sign,
+        ]
+    )
     await server.import_xml("AASmodel.xml") # Importing the OPCUA ML model generated on the AASX tool.
     # Creating the variables based on the nodes defined in the OPCUA ML model.
     testProperty1=server.get_node("ns=3;i=119")
     testProperty2=server.get_node("ns=3;i=126")
-    # We have now to set up the varibales to editable if we want to overwrite its values
+    # We have now to set up the varibales to editable if we want to overwrite its values. 
+    # This will also allows to edit the variables from different connected clients (Variable.set_writable())
     testProperty1.set_writable()
     testProperty1.set_writable()
     # We can associate a method in OPC UA with an Operation of the AAS.
