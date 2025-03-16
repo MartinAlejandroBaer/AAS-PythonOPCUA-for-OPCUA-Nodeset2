@@ -88,7 +88,8 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     asyncio.run(main(), debug=True)
 ```
-The required files to execute the above mentioned codes are contained within the folder "examples".
-
-Important Note: The deployed Asset Administration Shells correspond to version 2.0.
+* Important notes
+- The required files to execute the above mentioned codes are contained within the folder "examples".
+- The variables exposed with two above presented codes are read-only. In order to be able to edit them from different clients check the "examples" folder. 
+- The deployed Asset Administration Shells correspond to version 2.0.
 
